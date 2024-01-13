@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </head>
+  <style>
+    .wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e3f2fd;
+    }
+    .gal {
+      display: flex;
+      gap: 12px;
+      max-width: 300px;
+      width: 100%;
+
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+    .gal .card {
+      display: flex;
+      flex: 0 0 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      height: 400px;
+    }
+    #card-1 {
+      background-image: url(aset/download.jpeg);
+      background-size: cover;
+    }
+    #card-2 {
+      background-image: url(aset/thorfin.jpeg);
+      background-size: cover;
+    }
+    #card-3 {
+      background-image: url(aset/mountain.jpeg);
+      background-size: cover;
+    }
+    #card-4 {
+      background-image: url(aset/me.jpeg);
+      background-size: cover;
+    }
+    .card .image {
+      height: 150px;
+      width: 150px;
+    }
+    .image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .card {
+      margin-top: 4px;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: left;
+    }
+    .card h2 {
+      margin: 25px;
+      font-size: 22px;
+      font-weight: 600px;
+    }
+  </style>
+  <body>
+    <section class="wrap">
+      <div class="gal">
+        <div class="card" id="card-1">
+          <div class="image">
+            <!-- <img src="aset/download.jpeg" alt="" /> -->
+          </div>
+          <h2 class="text-light">Judul</h2>
+          <p class="text-light">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card" id="card-2">
+          <div class="image">
+            <!-- <img src="aset/download.jpeg" alt="" /> -->
+          </div>
+          <h2 class="text-light">Judul</h2>
+          <p class="text-light">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card" id="card-3">
+          <div class="image">
+            <!-- <img src="aset/download.jpeg" alt="" /> -->
+          </div>
+          <h2 class="text-light">Judul</h2>
+          <p class="text-light">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card" id="card-4">
+          <div class="image">
+            <!-- <img src="aset/download.jpeg" alt="" /> -->
+          </div>
+          <h2 class="text-light">Judul</h2>
+          <p class="text-light">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

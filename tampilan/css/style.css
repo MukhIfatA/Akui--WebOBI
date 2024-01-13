@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  /* text-align: ; */
+  align-items: center;
+  background-color: transparent;
+  color: white;
+
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "poppins", sans-serif;
+}
+.video-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+.hero .search-box {
+  width: 80%;
+  height: 100px;
+  backdrop-filter: blur;
+  border: white solid 1px;
+  background: hsla(0, 6%, 40%, 0.583);
+  margin-top: 20px;
+  padding-top: 1%;
+  display: flex;
+}
+.search-box form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.col {
+  width: 25%;
+}
+.col select {
+  width: 90%;
+  border: none;
+  padding: 0 0 3px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.3);
+  border-right: 1px solid hsla(0, 0%, 100%, 0.3);
+  font-size: 14px;
+  outline: none;
+  color: white;
+  background: transparent;
+}
+.col option {
+  color: black;
+}
+.col input {
+  border: none;
+  width: 90%;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.3);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.3);
+  font-size: 14px;
+  outline: none;
+  color: white;
+  background: transparent;
+}
+form button {
+  border: none;
+  background-color: rgb(0, 166, 255);
+  color: white;
+  height: 40px;
+  width: 40px;
+  margin: 0 20px;
+  outline: none;
+}
+.col label {
+  font-size: 14px;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+@media only screen and (max-width: 800px) {
+  .hero .search-box {
+    height: 350px;
+  }
+  .search-box form {
+    width: 100%;
+    margin: 20px;
+    display: block;
+    height: 100%;
+  }
+  .col {
+    width: 100%;
+  }
+  .col select {
+    width: 100%;
+    border: none;
+    padding: 0 0 3px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.3);
+
+    font-size: 14px;
+    outline: none;
+    color: white;
+    background: transparent;
+  }
+  .col input {
+    width: 100%;
+    border-right: none;
+  }
+  form button {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+}
+
+.link {
+  padding: 100px 20px 20px 15px;
+}
+.job_card {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  border: 2px solid rgb(190, 190, 190);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  transition: 300ms;
+  transform: scale(1);
+  user-select: none;
+}
+.job_card:hover {
+  transform: scale(1.01);
+  border: 1px solid blue;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+.job {
+  display: flex;
+}
+.job .text {
+  margin-left: 2.3 rem;
+}
+.job .text .category {
+  color: black;
+  font-size: 19px;
+}
+.job .text span {
+  color: rgb(116, 112, 112);
+}
+.job_card:active {
+  border: 4px solid blue;
+  transition: 0.2s;
+}
+.job_card ion-icon {
+  margin-top: 20px;
+  font-size: 22px;
+}

@@ -1,0 +1,12 @@
+<script>
+    // Store an array in localStorage
+    let myArray = [1, 2, 3, 4, 5];
+    localStorage.setItem("myArrayKey", JSON.stringify(myArray));
+
+    // Retrieve the array from localStorage
+    let retrievedArray = JSON.parse(localStorage.getItem("myArrayKey"));
+
+    // Now, retrievedArray contains the original array
+    console.log(retrievedArray);
+    console.log(retrievedArray[0])
+</script>

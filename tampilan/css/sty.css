@@ -1,0 +1,39 @@
+element.style {
+  background-color: #ffd038;
+}
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.banner {
+  min-height: 56vh;
+  padding-bottom: 20px;
+  background: #ffc70d;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 2px 3px rgb(0 0 0 / 50%);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+user agent stylesheet div {
+  display: block;
+}
+
+.mt-5 {
+  margin: 20px;
+}
